@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV Marvel</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .navbar .nama {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 20px;
+    }
+
+    .navbar .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .navbar .menu-icon {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .navbar .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+        }
+
+        .navbar .nav-links li {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .navbar .menu-icon {
+            display: block;
+        }
+
+        .navbar.active .nav-links {
+            display: flex;
+        }
+    }
+
+            body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.foto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.kontak {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kontak p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+hr {
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.konten {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+p{
+    text-align: center;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+li{
+    font-weight: lighter;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="nama">10tkj2</a>
+            <ul class="nav-links">
+                <li><a href="navbar.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="tabel.html">tabel</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="#">Cv Marvel</a></li>
+                <li><a href="cvSona.html">Cv Sona</a></li>
+            </ul>
+            <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        </nav>
+        <div class="container">
+            <header>
+                <div class="header-container">
+                  <h1>Alif Marvel</h1>
+                  <h1>Al-Fathir</h1>
+                </div>
+                <div class="foto">
+                    <img src="vel.jpg" alt="hayo mau ngapain"/>
+                </div>
+            </header>
+            <div class="kontak">
+                <p>📞+62882</p>
+                <p>✉️ marvel@gmail.com</p>
+                <p>🌐</p>
+                <p>📍Pondok Ungu Permai</p>
+            </div>
+            <hr>
+            <div class="konten">
+                <section class="tentang-saya">
+                    <h2>TENTANG SAYA</h2>
+                    <p>saya manusia normal</p>
+                </section>
+                <section class="keahlian">
+                    <h2>KEAHLIAN</h2>
+                    <ul>
+                        <li>web devoloper</li>
+                        <li>video editing</li>
+                        <li>photo editing</li>
+                        <li>photographer</li>
+                </ul>
+                </section>
+                <section class="pendidikan">
+                    <h2>PENDIDIKAN</h2>
+                    <p>SMK Vinama2 Tkj</p>
+                </section>
+                <section class="Kerja">
+                    <div class="pengalaman-kerja"></div>
+                    <h2>PENGALAMAN KERJA</h2>
+                    <ul>
+                        <li>Belum Kerja, Masih Sekolah</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+
+            document.querySelector('.navbar').classList.toggle('active');
+
+        }
+        </script>
+    </body>
+</html>

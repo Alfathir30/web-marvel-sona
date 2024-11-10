@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi Bar Marvel Sona</title>
+    <link rel="icon" type="image/x-icon" href="10tkj2.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar .nama {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+            }
+
+            .navbar .nav-links li {
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+            }
+
+            .navbar.active .nav-links {
+                display: flex;
+            }
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="nama">10tkj2</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="tabel.html">tabel</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="cvMarvel.html">Cv Marvel</a></li>
+            <li><a href="cvSona.html">Cv Sona</a></li>
+        </ul>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+
+    <h1>Welcome Di web Marvel Dan Sona</h1>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

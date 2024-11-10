@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sona</title>
+    <link rel="stylesheet" href="cv - son.css">
+    <style>
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .navbar .nama {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 20px;
+    }
+
+    .navbar .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .navbar .menu-icon {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .navbar .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+        }
+
+        .navbar .nav-links li {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .navbar .menu-icon {
+            display: block;
+        }
+
+        .navbar.active .nav-links {
+            display: flex;
+        }
+    }
+
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #333;
+}
+
+li{
+    font-weight: 900;
+}
+
+p{
+    font-weight: 900;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nama">10tkj2</a>
+        <ul class="nav-links">
+            <li><a href="navbar.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="tabel.html">tabel</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="cvMarvel.html">Cv Marvel</a></li>
+            <li><a href="#">Cv Sona</a></li>
+        </ul>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+    <div class="cv-container">
+        <header>
+            <div class="profil">
+                <img src="darwin.jpg"alt="Foto Sona" class="profile-photo">
+                <div class="profile-info">
+                    <h1>Sona Mardiansyah</h1>
+                    <p></p>
+                    <p>Email:son123@gmail.com
+                    Telepon:08264278476</p>
+                    <p>Alamat:kaliabang rorotan</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="about">
+                <h2>Profil</h2>
+                <p>SAYA ADALAH SEORANG YANG MASIH BERPENDIDIKAN DI JENJANG SMK DAN MEMILIKI HOBI BERSEPEDA DAN FUTSAL  </p>
+            </section>
+
+            <section class="skills">
+                <h2>Keterampilan</h2>
+                <ul>
+                    <li>MEMILIKI BAKAT DI GAME FREE FIRE DAN OLAHARAGA DALAM BIDANG FUTSAL</li>
+                </ul>
+            </section>
+
+            <section class="Pengalaman">
+                <h2>Pengalaman Kerja</h2>
+                <ul>
+                    <li>MASIH SEKOLAH</li>
+                </ul>
+                    
+            </section>
+
+            <section class="pendidikan">
+                <h2>Pendidikan</h2>
+                <ul>
+                    <li>SMK KELAS 10TKJ</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+        <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

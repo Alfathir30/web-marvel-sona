@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contoh Tabel HTML</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="10tkj2.ico">
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        .tombol{
+            display: block;
+            margin: auto;
+            width: fit-content;
+        }
+
+        table{
+            margin: auto;
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        table,th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        body{
+            background-color: floralwhite;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    
+        .navbar .nama {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+    
+        .navbar .nav-links {
+            display: flex;
+            list-style: none;
+        }
+    
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+    
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    
+        .navbar .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+            }
+    
+            .navbar .nav-links li {
+                text-align: center;
+                margin: 15px 0;
+            }
+    
+            .navbar .menu-icon {
+                display: block;
+            }
+    
+            .navbar.active .nav-links {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nama">10tkj2</a>
+        <ul class="nav-links">
+            <li><a href="navbar.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">tabel</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="cvMarvel.html">Cv Marvel</a></li>
+            <li><a href="cvSona.html">Cv Sona</a></li>
+        </ul>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+
+    <h2>Tabel Data Kelas</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jenis Klamin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td> Ahmad Sahet</td>
+                <td>Laki-Laki</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ahmad Hubaib</td>
+                <td>Laki-Laki</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alif Marvel</td>
+                <td>Laki-Laki</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="tombol"><a href="biodata.html">Kembali</a></button>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
